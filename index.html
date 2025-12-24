@@ -1,56 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/zentraq-flux/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zentraq Flux — Технологии, которые работают на вас</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <script type="module" crossorigin src="/zentraq-flux/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/zentraq-flux/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/zentraq-flux/assets/styles-rqiuCtpB.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__accent">Zentraq</span>-Flux
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="nav" id="main-nav">
+          <ul class="nav__list">
+              <li><a href="#" class="nav__link">Главная</a></li>
+              <li><a href="#programs" class="nav__link">Программы</a></li>
+              <li><a href="#about" class="nav__link">О платформе</a></li>
+              <li><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li><a href="#blog" class="nav__link">Блог</a></li>
+              <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+          </ul>
+      </nav>
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="burger" aria-label="Menu" id="burger">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
-
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+          <li><a href="#" class="mobile-nav__link">Главная</a></li>
+          <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+          <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+          <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+          <li><a href="#blog" class="mobile-nav__link">Блог</a></li>
+          <li><a href="#contact" class="mobile-nav__link">Контакты</a></li>
+      </ul>
+  </nav>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="container">
+      <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Технология нового поколения для вашего успеха</h1>
+          <p class="hero__subtitle">Воплотите мечты в реальность с передовой цифровой инфраструктурой Zentraq Flux. Платформа года уже доступна в Европе.</p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+  </div>
+  <div class="hero__decor"></div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container about__grid">
+      <div class="about__image">
+          <img src="/zentraq-flux/assets/one-BYH75hcV.jpg" alt="Zentraq Platform" class="img-fluid">
+      </div>
+      <div class="about__text">
+          <h2 class="section-title">Переосмыслите подход к развитию</h2>
+          <p>Zentraq Flux — это не просто IT-школа, а <strong>инновационная технология</strong>, которая меняет правила игры. Мы создали решения, которые работают на вас, обеспечивая быстрый и легкий старт в индустрии.</p>
+          <ul class="about__list">
+              <li><i data-lucide="check-circle"></i> AI-инструменты для реальных задач</li>
+              <li><i data-lucide="check-circle"></i> Пошаговый путь, понятный каждому</li>
+              <li><i data-lucide="check-circle"></i> Экспертная поддержка на всех этапах</li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<section class="section benefits" id="benefits">
+  <div class="container">
+      <h2 class="section-title text-center">Почему выбирают нас</h2>
+      <div class="benefits__grid">
+          <div class="benefit-card">
+              <i data-lucide="zap" class="benefit-card__icon"></i>
+              <h3>Быстрый старт</h3>
+              <p>Подключение занимает 2 минуты. Легко разобраться без опыта работы в IT.</p>
+          </div>
+          <div class="benefit-card">
+              <i data-lucide="trending-up" class="benefit-card__icon"></i>
+              <h3>Стратегия роста</h3>
+              <p>Практики, применимые уже сегодня для вашего профессионального масштабирования.</p>
+          </div>
+          <div class="benefit-card">
+              <i data-lucide="shield-check" class="benefit-card__icon"></i>
+              <h3>Надежность</h3>
+              <p>Проверенный партнер с методологиями, доказавшими свою эффективность в странах ЕС.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section innovations" id="innovations">
+  <div class="container">
+      <div class="innovations__box">
+          <h2 class="section-title">Инновации и пассивный доход</h2>
+          <p>Наша программа пассивного дохода на базе AI позволяет не только учиться, но и оценивать перспективы проекта в реальном времени.</p>
+          <a href="#contact" class="btn btn--primary">Получить больше информации</a>
+      </div>
+  </div>
+</section>
+<section class="section programs" id="programs">
+  <div class="container">
+      <h2 class="section-title text-center">Направления обучения</h2>
+      <div class="programs__grid">
+          <div class="program-card program-card--featured">
+              <div class="program-card__content">
+                  <span class="badge">Advanced</span>
+                  <h3>AI & Machine Learning Architect</h3>
+                  <p>Создавайте решения, которые меняют правила игры. Глубокое погружение в нейросети и AI-инструменты для реальных задач.</p>
+                  <a href="#contact" class="btn btn--outline btn--small">Узнать детали</a>
+              </div>
+          </div>
+          <div class="program-card">
+              <i data-lucide="shield-alert" class="program-card__icon"></i>
+              <h3>Cyber Security</h3>
+              <p>Передовая цифровая инфраструктура и защита данных в условиях 2026 года.</p>
+          </div>
+          <div class="program-card">
+              <i data-lucide="code-2" class="program-card__icon"></i>
+              <h3>Fullstack Dev</h3>
+              <p>Пошаговый путь от нуля до Senior-разработчика на современных стеках.</p>
+          </div>
+          <div class="program-card">
+              <i data-lucide="layers" class="program-card__icon"></i>
+              <h3>Data Science</h3>
+              <p>Стратегия роста на базе инноваций и анализа больших данных.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="container">
+      <h2 class="section-title text-center">Голоса будущего</h2>
+      <div class="reviews__container">
+          <div class="review-card" data-speed="1.1">
+              <p class="review-card__text">«Zentraq-Flux — это платформа года. Помогли оценить перспективы проекта и выйти на доход в ЕС за 3 месяца.»</p>
+              <div class="review-card__author">
+                  <img src="/zentraq-flux/assets/two-C1G9oIXY.jpg" alt="User">
+                  <div>
+                      <strong>Alessandro Rossi</strong>
+                      <span>Milan, IT</span>
+                  </div>
+              </div>
+          </div>
+          <div class="review-card" data-speed="0.9">
+              <p class="review-card__text">«Инновационная технология обучения. Все просто и понятно даже без опыта в IT. Поддержка на высоте!»</p>
+              <div class="review-card__author">
+                  <img src="/zentraq-flux/assets/three-Bcoim2fq.jpg" alt="User">
+                  <div>
+                      <strong>Giulia Bianchi</strong>
+                      <span>Rome, IT</span>
+                  </div>
+              </div>
+          </div>
+          <div class="review-card" data-speed="1.2">
+              <p class="review-card__text">«Лучшие AI-инструменты для реальных задач. Программа пассивного дохода действительно работает.»</p>
+              <div class="review-card__author">
+                  <img src="/zentraq-flux/assets/four-CrYaYd32.jpg" alt="User">
+                  <div>
+                      <strong>Marco Esposito</strong>
+                      <span>Naples, IT</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="section blog" id="blog">
+  <div class="container">
+      <h2 class="section-title">Блог и новости</h2>
+      <div class="blog__grid">
+          <article class="blog-item">
+              <img src="/zentraq-flux/assets/five-BvEhDAM7.jpg" alt="News 1">
+              <div class="blog-item__content">
+                  <h4>Технологии 2026</h4>
+                  <p>Как передовая цифровая инфраструктура влияет на рынок Италии.</p>
+              </div>
+          </article>
+          <article class="blog-item">
+              <img src="/zentraq-flux/assets/six-JUCbHbAB.jpg" alt="News 2">
+              <div class="blog-item__content">
+                  <h4>AI в образовании</h4>
+                  <p>Удобная адаптация нейросетей в учебный процесс без сложностей.</p>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container contact__container">
+      <div class="contact__info">
+          <h2 class="section-title">Бесплатная консультация</h2>
+          <p>Оставьте заявку, и наш эксперт свяжется с вами для уточнения деталей доступа к платформе.</p>
+      </div>
+      <form class="contact-form" id="main-form">
+          <div class="form-group">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+              <input type="email" name="email" placeholder="E-mail" required>
+          </div>
+          <div class="form-group">
+              <input type="text" name="phone" id="phone-input" placeholder="Телефон (только цифры)" required>
+          </div>
+          <div class="form-group captcha-group">
+              <span id="captcha-question">5 + 3 = ?</span>
+              <input type="text" id="captcha-answer" placeholder="Ответ" required>
+          </div>
+          <div class="form-group checkbox-group">
+              <input type="checkbox" id="agree" required>
+              <label for="agree">Я согласен на обработку персональных данных</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Начать сейчас</button>
+          <div id="form-message" class="form-message"></div>
+      </form>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+      <div class="footer__col">
+          <a href="/" class="logo footer__logo">
+              <span class="logo__accent">Zentraq</span>-Flux
+          </a>
+          <p class="footer__text">
+              Инновационная технология обучения будущего. Постройте карьеру, которая работает на вас, уже сегодня.
+          </p>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#programs">Программы</a></li>
+              <li><a href="#innovations">Инновации</a></li>
+              <li><a href="#contact">Контакты</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Юридическая информация</h4>
+          <ul class="footer__list">
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="return.html">Return Policy</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="personal-data-policy.html">Personal Data</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__contact-list">
+              <li>
+                  <i data-lucide="phone" class="icon"></i>
+                  <a href="tel:+493025917319">+49 (30) 2591-7319</a>
+              </li>
+              <li>
+                  <i data-lucide="mail" class="icon"></i>
+                  <a href="mailto:hello@zentraq-flux.blog">hello@zentraq-flux.blog</a>
+              </li>
+              <li>
+                  <i data-lucide="map-pin" class="icon"></i>
+                  <span>Friedrichstraße 176-179, 10117 Berlin, Germany</span>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="container footer__bottom">
+      <p>&copy; 2025 Zentraq-Flux. Платформа уже доступна в Европе. Все права защищены.</p>
   </div>
 </footer>
-
+    <div class="cookie-popup" id="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      <button class="btn btn--primary btn--small" id="cookie-accept">Принять</button>
+  </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>
